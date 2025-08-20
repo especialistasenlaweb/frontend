@@ -1,0 +1,55 @@
+html,body{
+    height:100%;
+}
+body{
+    background:url("../images/fondo.jpg");
+    background-attachment: fixed;
+    background-size:cover;
+}
+progress, input[type=range]{
+    accent-color:orange;
+}
+.contenido{
+    /* border:red solid 5px; */
+    /* background:linear-gradient(rgba(255, 166, 0, 0.725), white, rgba(255,255,255,0.6)); */
+    background:rgba(255,255,255,0.7);
+    box-shadow:0 0 0.5em 0.5em rgba(255,255,255,0.8);
+    border-radius:2em;
+    height:500px;
+    margin:0 auto;
+    width:80%;
+}
+.formulario label{
+    display:block;
+}
+.formulario fieldset{
+    border-radius:0.5em 0.8em 0 0;
+    font-size:30px;
+}
+
+.formulario input[type=text],.formulario input[type=email]{
+    background:transparent;
+    border:none;
+    border-bottom:solid 1px;
+    font-size:30px;
+    outline:none;
+}
+.formulario input[type=submit]{
+    background:orange;
+    border:none;
+    box-shadow:0.2em 0.2em 0.1em rgba(0,0,0,0.5);
+    border-radius:0.3em;
+    cursor:pointer;
+    font-size:20px;
+    font-style:italic;
+    margin-top:1em;
+    padding:0.2em;
+    width:30%;
+}
+.formulario legend{
+    font-family:verdana;
+    font-size:25px;
+    font-style:italic;
+    text-align:right;
+    
+}

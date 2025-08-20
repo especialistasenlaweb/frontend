@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramación WEB</title>
+</head>
+<body>
+    <div class="contenido">
+        
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Mi application</legend>
+                <label for="nombre">Nombre: </label>
+                <label>
+                    <input type="text" id="nombre">
+                </label>
+                <!-- <label>
+                    Te gusta la PLAY STATION 5
+                    <input type="checkbox">
+                </label>  -->
+                <label for="correo">Correo:</label>
+                <label>
+                    <input type="email" id="correo" required>
+                </label>
+                
+                <label>
+                    <progress></progress> <br>
+                    <input type="date"> <br>
+                    <input type="number" min="2" max="8" value="2"> <br>
+                    
+                    <input type="range" min="1" max="10" value="5"> <br>
+                    <input id="micolor" type="color">
+
+                </label>
+
+
+                <label>
+                    <input type="submit" value="Enviar">
+                </label>
+                
+            </fieldset>
+        </form>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    <script>
+        $("#micolor").on("change",function(){
+            let micolorcito=$(this).val();
+            //alert(micolorcito);
+            $(".contenido").css("background",micolorcito);
+
+        })
+    </script>
+</body>
+</html>
