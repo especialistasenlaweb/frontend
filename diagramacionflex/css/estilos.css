@@ -1,0 +1,45 @@
+body{
+    background:lightblue;
+    font-size:8px;
+}
+
+.contenedor{
+    align-items:center;
+    border:solid;
+    display:flex;
+    height:400px;
+    justify-content:center;
+    gap:0.2em;
+
+}
+.contenedor div{
+    border:solid;
+    height:80px;
+    width:20%;
+}
+
+.hijo1{
+    background:blue;
+}
+.hijo2{
+    background:red;
+}
+.hijo3{
+    background:yellow;
+}
+.hijo4{
+    /* align-self:flex-start; */
+    background:black;
+    color:white;
+    font-size:20px;
+}
+
+@media print{
+    .hijo1, .hijo2, .hijo3{
+        display:none;
+    }
+    .contenedor .hijo4{
+        height:300px;
+        width:90%;
+    }
+}
